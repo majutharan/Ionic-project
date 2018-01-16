@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Action</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="action-sheets-basic-page" padding>
+  <button ion-button block (click)="openWindow()">Action Sheet</button>
+  <button ion-button block (click)="showAlert()">Basic Alert</button>
+  <button ion-button block (click)="clearMarkers()">hide</button>
+  <button ion-button block (click)="deleteMarkers()">delete</button>
+  <button ion-button block (click)="showMarkers()">show</button>
+  <div align="middle" #map id="map" style="height: 500px; width: 500px;"></div>
+
+
+</ion-content>
